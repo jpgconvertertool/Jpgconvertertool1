@@ -1,0 +1,36 @@
+# robots.txt for https://jpgconvertertool.com/
+# Directives for search engines and AI research crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://jpgconvertertool.com/sitemap.xml
+
+# Emerging AI & LLM Machine-Readable Index
+# Specification: https://llmstxt.org/
+Allow: /llm.txt
+Allow: /llms.txt
+
+# Explicit allowances for leading AI indexing agents
+User-agent: GPTBot
+Allow: /
+Allow: /llm.txt
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llm.txt
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

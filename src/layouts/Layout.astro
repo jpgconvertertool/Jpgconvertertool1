@@ -1,0 +1,60 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+}
+
+const { title, description, lang = 'en' } = Astro.props;
+const isRtl = lang === 'ar';
+---
+
+<!doctype html>
+<html lang={lang} dir={isRtl ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+      // Defensive descriptor for external extension scripts
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var fetchHolder = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return fetchHolder; },
+            set: function(val) { fetchHolder = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {}
+      })();
+    </script>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Canonical and Reciprocal Hreflang Tags (Astro i18n specification) -->
+    <link rel="canonical" href="https://jpgconvertertool.com/" />
+    <link rel="alternate" hreflang="en" href="https://jpgconvertertool.com/" />
+    <link rel="alternate" hreflang="pt" href="https://jpgconvertertool.com/pt/" />
+    <link rel="alternate" hreflang="es" href="https://jpgconvertertool.com/es/" />
+    <link rel="alternate" hreflang="fr" href="https://jpgconvertertool.com/fr/" />
+    <link rel="alternate" hreflang="de" href="https://jpgconvertertool.com/de/" />
+    <link rel="alternate" hreflang="ar" href="https://jpgconvertertool.com/ar/" />
+    <link rel="alternate" hreflang="zh-tw" href="https://jpgconvertertool.com/zh-tw/" />
+    <link rel="alternate" hreflang="x-default" href="https://jpgconvertertool.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-neutral-100 antialiased selection:bg-red-600 selection:text-white min-h-screen">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,388 @@
+Master Prompt: SEO Site Architecture, Keyword Clustering, Topical Authority & Internal Linking
+Reusable template — replace the input placeholders and attach relevant GSC CSV exports before running the prompt.
+ROLE
+Act as a senior SEO strategist, keyword clustering specialist, topical authority planner, technical SEO consultant, information architect, and website content strategist.
+Analyse my primary keyword, supporting keywords, and competitor URLs. Create an SEO-first website structure that satisfies search intent, covers the topic usefully, builds topical authority, and connects pages through logical internal linking.
+Do not assume every keyword needs a separate page. First research and cluster keywords, then recommend the right pages and URL structure. Do not build the website or write full articles until I approve the plan.
+1. INPUTS
+**Main keyword:**  jpg converter 
+**Supporting keywords:** Attached .csv file 
+**Competitor URLs:** https://www.freeconvert.com/jpg-converter 
+https://image.online-convert.com/convert-to-jpg
+https://www.freeconvert.com/image-converter
+https://www.iloveimg.in/convert-to-jpg
+Optional inputs:
+Website domain: Jpgconvertertool.com
+Website type: TOOL / CONVERTER / SAAS /
+Target country: [COUNTRY] Attached .csv files GSC 
+Target language: [LANGUAGE] as per country impressions given in .csv file 
+Existing website URL or sitemap: https://jpgconvertertool.com/sitemap.xml  can change it as per requirement 
+Preferred technology: ASTRO / HTML-CSS-JAVASCRIPT / etc best combination 
+Existing URLs that must be preserved: 
+https://jpgconvertertool.com/
+
+https://www.jpgconvertertool.com/tiff-to-pdf
+https://www.jpgconvertertool.com/
+
+If optional inputs are missing, state reasonable assumptions and proceed without unnecessary delays.
+2. COMPETITOR RESEARCH
+Inspect the supplied competitor URLs using available browsing and SEO tools. Analyse:
+Main search intent and primary keyword.
+Homepage purpose and targeting.
+URL structure, hierarchy, categories, and supporting pages.
+Keyword themes covered by important pages.
+Internal linking between hubs and supporting pages.
+Content usefulness, depth, examples, and topical coverage.
+Tools, calculators, converters, or interactive features.
+Trust signals, authorship, methodology, sources, and update information.
+Titles, headings, breadcrumbs, and structured data where accessible.
+Missing topics, weak explanations, usability problems, and opportunities.
+Create this table:
+| Competitor | Main page and intent | Site structure | Strengths | Gaps | Opportunities |
+|---|---|---|---|---|
+Rules:
+Inspect actual pages where possible. Never invent competitor URLs, traffic, keyword difficulty, backlinks, rankings, or schema findings.
+Clearly label inaccessible information and inferences.
+Use metrics only when reliable data is available from connected tools or supplied sources.
+Separate observed facts from recommendations.
+Do not copy competitor content or blindly copy their architecture.
+Identify ways to improve user experience, content quality, topic coverage, and functionality.
+3. KEYWORD CLUSTERING BY SEARCH INTENT
+Analyse every supplied keyword and group keywords by meaning and intent, not just shared words.
+Decide whether each keyword belongs on:
+The homepage.
+A category or hub page.
+A supporting article or guide.
+A separate calculator, converter, or tool page.
+A comparison page.
+An FAQ or subsection.
+An existing page that should be improved.
+A future page requiring further research.
+No page, with a clear reason.
+Create this table:
+| Cluster | Primary keyword | Supporting keywords | Search intent | Recommended page type | Proposed URL |
+|---|---|---|---|---|---|
+Rules:
+Assign every supplied keyword a destination or explain why it is excluded.
+Identify duplicates, close variants, and semantically related terms.
+Combine keywords on one page when they share intent and can be served well together.
+Recommend separate pages when intent, user task, required functionality, or expected content differs meaningfully.
+Do not create a URL for every keyword variation.
+Do not overload the homepage with every supporting keyword.
+Flag irrelevant, overlapping, unsupported, or uncertain keywords.
+Avoid assigning the same primary keyword to multiple pages without a clear reason.
+Identify likely keyword cannibalisation risks.
+10. Record each keyword's destination so coverage can be audited.
+4. HOMEPAGE KEYWORD STRATEGY
+Decide the homepage's primary purpose first. Normally, the homepage targets the main keyword and its closest intent-matching variations.
+Provide:
+One primary keyword.
+Close variants.
+Secondary semantic terms and important entities.
+Main search intent and user task.
+Unique value proposition.
+Recommended title tag and meta description.
+H1 and proposed H2/H3 outline.
+Main tool or feature placement, if relevant.
+Topics that belong on the homepage.
+Topics that deserve separate supporting pages.
+Contextual links from the homepage to those pages.
+Rules:
+Give the main keyword a clear, natural focus.
+Do not target every supporting keyword equally.
+Answer the primary user need early.
+Add examples, FAQs, and related links only when useful.
+Do not make the homepage unnecessarily long just to include every keyword.
+Use the homepage as the central hub when that suits the site and user journey.
+5. SITE ARCHITECTURE: HUB AND SPOKE
+Build a clear hierarchy connecting the homepage, optional category hubs, supporting pages, tools, and trust pages.
+Conceptual model:
+Homepage / Main Tool
+Core topic sections
+Supporting cluster A
+  - Supporting page A1
+  - Supporting page A2
+Supporting cluster B
+  - Supporting page B1
+  - Supporting page B2
+Supporting cluster C
+Trust and policy pages
+Deliver:
+A readable tree diagram of the proposed site.
+A URL and page map.
+A reason for every proposed page.
+Each page's target keywords, intent, purpose, parent, and links.
+Use this table:
+| Page | Parent page | Proposed URL | Primary keyword | Page purpose | Priority |
+|---|---|---|---|---|---|
+Rules:
+Build the smallest useful structure that covers the topic well.
+Avoid thin pages, doorway pages, and URLs created solely for search traffic.
+Do not create empty category pages that add no navigation or content value.
+Use descriptive, consistent, human-readable slugs.
+Keep related pages together logically.
+Preserve useful existing URLs where possible; recommend redirects only when justified.
+Mark speculative page ideas as optional until their usefulness is validated.
+Do not link to planned pages until they are live and useful.
+6. TOPICAL AUTHORITY AND SEMANTIC COVERAGE
+Map the core topic, subtopics, related entities, user questions, and content gaps.
+Include:
+Core topic and main user task.
+Essential and supporting subtopics.
+Related entities and terminology.
+Beginner and advanced questions.
+Comparisons and alternatives.
+Practical examples and use cases.
+Common errors and misconceptions.
+Relevant official sources, standards, or regulations where applicable.
+Topic gaps found in competitor research.
+For each topic, state whether it belongs on the homepage, a dedicated page, an FAQ, an interactive feature, or should be excluded.
+Rules:
+Build meaningful coverage rather than publishing many low-value pages.
+Use relevant entities naturally and accurately.
+Explain relationships between concepts.
+Use examples, demonstrations, and evidence when useful.
+Address meaningful user needs, not just competitor word counts.
+Never claim that a certain number of pages or keywords guarantees rankings or topical authority.
+7. INTERNAL LINKING PLAN
+Plan internal links before content production.
+Create this matrix:
+| Source page | Destination page | Suggested anchor text | Placement | Purpose |
+|---|---|---|---|---|
+Rules:
+The homepage links to important supporting pages where contextually relevant.
+Every supporting page links back to its parent or main hub.
+Related sibling pages link to one another when useful to readers.
+Category hubs link to their relevant child pages.
+Methodology and trust pages are linked from relevant tools, claims, and explanations.
+Use descriptive, natural anchors that accurately describe the destination.
+Vary anchors naturally; do not force exact-match anchors into every link.
+Avoid excessive repeated links, irrelevant cross-links, and links added only to manipulate rankings.
+Use crawlable HTML links.
+10. Prevent orphan pages and unnecessary click depth.
+11. Never link to pages that do not exist yet.
+12. Keep breadcrumbs, navigation, related-page blocks, and contextual links consistent.
+For each page, specify incoming links, outgoing links, parent page, sibling pages, breadcrumb path, and whether it belongs in the main navigation, footer, or contextual links. Do not automatically put every page in the main navigation.
+8. E-E-A-T AND TRUST PLAN
+Identify trust signals appropriate to the topic, especially for finance, health, legal, safety, or other high-impact subjects.
+Consider:
+About page and genuine author details.
+Qualified reviewer information where appropriate and authentic.
+Editorial standards and update policy.
+Transparent methodology and assumptions.
+Primary sources and authoritative references.
+Update dates backed by actual reviews.
+Corrections or change logs where useful.
+Contact information.
+Privacy policy and terms where relevant.
+Disclaimers and tool limitations where appropriate.
+Evidence for important claims.
+Real examples and testing.
+Create:
+| Page or element | Trust signal | Why it matters | Implementation |
+|---|---|---|---|
+Never invent authors, qualifications, testimonials, awards, reviews, or endorsements. Do not treat schema, an author bio, or an update date alone as proof of trust. Verify important claims and clearly mark items that require further research.
+9. ON-PAGE SEO SPECIFICATIONS
+For every proposed indexable page, provide:
+Primary keyword and secondary keywords.
+Search intent.
+SEO title and meta description.
+H1 and H2/H3 outline.
+Recommended content elements.
+Relevant entities and terminology.
+FAQs, when useful.
+Internal links to include.
+Suitable structured data, if eligible.
+Canonical URL requirements.
+Potential overlap with other pages.
+Do not write complete articles yet unless specifically requested. First approve the page targets and outlines.
+Structured data rules:
+Recommend types only when they accurately represent the visible page and actual website.
+Consider relevant types such as WebSite, Organization, WebPage, BreadcrumbList, Article, or valid tool-related types.
+Do not add fake ratings or reviews.
+Do not mark up invisible or misleading content.
+Do not claim that schema guarantees rankings or rich results.
+Validate structured data before implementation.
+10. TECHNICAL SEO
+Create a checklist appropriate to the actual platform and architecture. Include:
+Clean URLs.
+XML sitemap containing intended indexable canonical URLs.
+Correct robots.txt directives.
+Canonical tags.
+Logical headings and crawlable internal links.
+Breadcrumbs.
+Mobile usability and accessibility.
+Page speed and Core Web Vitals.
+Image optimisation and descriptive alt text.
+Appropriate index/noindex decisions.
+Prevention of duplicate and thin pages.
+Redirects and 404 handling.
+Search Console setup.
+Analytics where required and privacy requirements are addressed.
+Structured data validation.
+Pre-launch testing.
+Do not prescribe a framework or folder structure before considering the existing site. For WordPress, respect existing permalinks, themes, plugins, and URLs. For a static framework, recommend a suitable structure for that framework.
+11. IMPLEMENTATION ROADMAP
+Divide work into phases:
+**Phase 1 — Core website**
+Homepage or primary tool page.
+Essential functionality.
+Primary keyword targeting.
+Core explanatory sections.
+Required trust pages.
+Technical SEO foundations.
+Initial internal linking.
+**Phase 2 — Highest-value supporting pages**
+Choose pages based on user value, distinct intent, competitor gaps, relevance, and available evidence.
+**Phase 3 — Expand topic coverage**
+Add pages only when they serve distinct needs or provide meaningful additional value.
+**Phase 4 — Review and improve**
+Audit keyword-to-URL mapping.
+Check cannibalisation and orphan pages.
+Review internal links.
+Update outdated facts and sources.
+Use actual Search Console and analytics data when available.
+Reassess usefulness and missing coverage.
+Use this table:
+| Phase | Page or task | Priority | Reason | Dependencies |
+|---|---|---|---|---|
+12. REQUIRED FINAL OUTPUT
+Present the work in this order:
+Executive recommendation: homepage focus and how supporting keywords should be handled.
+Competitor analysis: structures, strengths, gaps, and opportunities.
+Keyword clustering table covering all supplied keywords.
+Homepage SEO plan: keyword, title, meta description, H1, sections, and content boundaries.
+Recommended site architecture in tree form.
+URL and page mapping table.
+Topical authority map with subtopics and entities.
+Internal linking matrix.
+E-E-A-T and trust plan.
+10. On-page SEO specifications for each proposed page.
+11. Technical SEO checklist.
+12. Prioritised implementation roadmap.
+13. Keyword coverage audit: mapped, combined, excluded with reason, or needs research.
+14. Risks and unresolved questions.
+Use tables when they help compare decisions. Explain the reasons for important recommendations in plain English.
+13. FINAL QUALITY CONTROL
+Before presenting the plan, verify:
+The main keyword has one clear primary destination.
+Supporting keywords are clustered by intent.
+Every supplied keyword has a documented disposition.
+Every proposed page has a distinct purpose.
+The homepage is not overloaded.
+Similar keywords are not split into unnecessary pages.
+Distinct search intents are not combined into weak pages.
+The URL hierarchy is clear.
+Internal links connect parent, child, and relevant sibling pages.
+Planned pages are not treated as published pages.
+Competitor findings are evidence-based or marked as hypotheses.
+Trust claims are accurate and verifiable.
+No fake metrics or credentials are introduced.
+Technical recommendations fit the actual platform.
+The plan prioritises useful content and tools over page count.
+If evidence is insufficient to decide whether two keywords need separate pages, mark the decision **Needs validation**.
+15. GOOGLE SEARCH CONSOLE CSV ANALYSIS
+I may attach multiple CSV exports from Google Search Console (GSC). Analyse **all attached CSV files** before deciding keyword strategy, site architecture, country priorities, or language rollout.
+For each file:
+Identify the report type, date range, dimensions, metrics, and visible filters.
+Inspect all rows; process large files programmatically rather than relying on a preview.
+Handle different column names and export formats carefully, and state any uncertainty.
+Combine files only when dates, dimensions, filters, and metrics are comparable. Avoid double-counting overlapping exports.
+Preserve the source data and report missing columns, assumptions, and data-quality limits.
+Analyse queries/keywords, pages, countries, clicks, impressions, CTR, average position, and trends where available. Identify query-to-page relationships, possible cannibalisation, high-impression/low-CTR queries, meaningful visibility opportunities, queries without a suitable page, and countries whose impressions suggest a language opportunity.
+Provide a table where data supports it:
+| Query or keyword | Page | Country | Clicks | Impressions | CTR | Average position | Recommended action |
+|---|---|---|---:|---:|---:|---:|---|
+Also provide a country performance summary, query/page opportunities, mapping of existing queries to proposed clusters and URLs, pages to improve before creating new ones, and a prioritised action plan. Do not assume the highest-impression country is automatically the best market. Consider clicks, impressions, position, CTR, search intent, language, business relevance, localisation effort, and data quality. Never invent search volume, KD, revenue, or metrics absent from the files or reliable connected tools. Clearly distinguish GSC observations from recommendations.
+16. ASTRO.JS + TAILWIND CSS V4 IMPLEMENTATION
+I have already initialised a new Astro.js project. Work within the existing project; do not replace it with an unrelated scaffold.
+Before coding:
+Inspect the project files, package configuration, routes, components, and current implementation.
+Read `DESIGN.md` and treat it as the primary source for design tokens, typography, colour, spacing, components, and visual rules.
+Consult the official Astro documentation MCP server for routing, layouts, integrations, and i18n.
+Use the Tailwind CSS v4 docs / `tailwind-4-docs` skill. Do not assume Tailwind v3 configuration or syntax is correct for v4.
+Check installed package versions and use compatible APIs.
+Understand existing configuration before overwriting files.
+References:
+Astro: https://docs.astro.build/en/getting-started/
+Astro i18n recipe: https://docs.astro.build/en/recipes/i18n/
+Astro docs MCP: https://docs.astro.build/en/guides/build-with-ai/#astro-docs-mcp-server
+Tailwind v4 skill: https://www.skills.sh/lombiq/tailwind-agent-skills/tailwind-4-docs
+Tailwind Agent Skills: https://github.com/Lombiq/Tailwind-Agent-Skills
+Optional Vercel design resource: https://getdesign.md/vercel/design-md (consider `npx getdesign@latest add vercel` only if compatible with `DESIGN.md` and the existing project)
+Logo/favicon option: https://logofa.st/
+If the Astro MCP server or Tailwind skill is unavailable, say so and use official documentation where accessible. Never claim to have used a tool or skill unless it was actually consulted. Follow `DESIGN.md`; Vercel resources must not override project-specific design rules. Build responsive, accessible pages, use reusable layouts/components, preserve working routes and features, avoid unnecessary dependencies, and run available build/check commands before reporting completion.
+17. COMPETITOR FEATURE AUDIT — IMPROVE, DO NOT COPY UI
+Visit and inspect the competitor website(s). Determine what features actually exist, how they work, what user problem each solves, and which are relevant to our audience.
+| Competitor feature | User problem solved | Keep, improve, or skip | Our improved version | Effort | Priority |
+|---|---|---|---|---|---|
+Consider core functionality and accuracy, ease and speed of use, inputs and validation, clarity of results, examples and explanations, related tools, accessibility, mobile usability, performance, trust and sources, exports/sharing/saving where useful, and country-specific relevance.
+Rules:
+If the site cannot be accessed, state that and do not pretend the audit was completed.
+Separate observed features from ideas inferred from snippets or descriptions.
+Do not copy design, UI, branding, text, source code, or distinctive visual arrangements.
+Identify the user need behind each feature and propose an original implementation consistent with `DESIGN.md`.
+Prioritise by user value, relevance, accuracy, effort, and likely SEO benefit; do not add features just because a competitor has them.
+Explain which features belong on the homepage, need separate pages, or should be skipped. Define what “better” means for this website.
+18. MULTILINGUAL AND INTERNATIONAL SEO
+This is currently an English-language website. Use GSC country/query evidence, keyword research, and user needs to recommend target countries and languages. Follow the official Astro i18n guidance: https://docs.astro.build/en/recipes/i18n/.
+Do not merely create empty `/lang/` pages or translate only the navigation. For each approved language/locale, localise the full relevant website experience: homepage and main tool, supporting pages, navigation, footer, breadcrumbs, internal links, titles, meta descriptions, headings, body copy, FAQs, buttons, labels, validation and error messages, examples, units/currencies/formats, relevant trust and policy pages, structured data, alt text, and other meaningful accessibility text.
+Market selection
+Analyse countries and queries in the GSC CSV files.
+Identify countries generating impressions/clicks and whether queries indicate language opportunities.
+Prioritise markets using available evidence, relevance, localisation effort, and likely value.
+Do not assume each country needs a separate language or separate website.
+Distinguish language from country targeting. Make country-specific variants only when useful local information, formats, terminology, features, or content justify them.
+Label weakly supported markets as hypotheses and state what needs validation.
+Create:
+| Priority | Target country/market | Language and locale | GSC evidence | Proposed URL pattern | Pages to localise | Local adaptations |
+|---|---|---|---|---|---|---|
+Astro i18n implementation
+Follow current Astro i18n documentation and the existing project configuration.
+Choose an appropriate URL structure, such as locale-prefixed routes, based on the actual site.
+Keep translations maintainable in suitable content/data structures.
+Link language switches to equivalent pages when those translations exist; otherwise use a clear fallback.
+Avoid thin, automatically translated, or duplicate locale pages without useful localisation and quality review.
+Do not use browser-language redirects that block access to explicit locale URLs.
+Give each indexable locale page a self-referencing canonical unless there is a justified alternative.
+Hreflang requirements
+Add valid hreflang annotations for every equivalent, indexable locale version.
+Include a self-reference and reciprocal links between all equivalent versions.
+Use valid language/region codes, such as `en`, `en-US`, or `fr-FR`, based on the actual locale plan.
+Add `x-default` only when a meaningful default or language-selection page exists.
+Use absolute canonical, indexable URLs; do not list missing, redirected, noindex, or non-equivalent pages.
+Keep HTML head and XML sitemap hreflang consistent if both are used.
+Validate the map for missing reciprocal references and invalid locale codes.
+Do not add hreflang for languages/pages that have not been created. Maintain a shared mapping to keep tags consistent as locales grow.
+Translation quality
+Translate and adapt the complete approved page, not just its URL or menu. Research target-language keywords and search intent instead of assuming literal translations of English keywords are optimal. Preserve functionality and factual accuracy; use natural local wording; keep FAQs, metadata, schema, and visible content aligned. Do not claim professional review unless it occurred.
+19. FAQ CONTENT AND JSON-LD
+Use FAQs when they answer genuine questions relevant to a page and its search intent.
+Research questions from supplied keywords, GSC queries, competitor gaps, and reliable sources where available.
+Make concise, accurate answers visible on the page.
+Add valid `FAQPage` JSON-LD only when the visible FAQ content and current structured-data guidance support it.
+Keep schema questions and answers aligned with the visible FAQ text.
+Where practical, generate visible FAQs and JSON-LD from the same structured data source.
+Do not add hidden, irrelevant, misleading, or keyword-stuffed FAQs.
+Do not promise FAQ rich results or ranking gains.
+Validate JSON-LD syntax and test rendered pages.
+Translate both visible FAQs and their JSON-LD on locale pages.
+10. Do not automatically add FAQPage schema to every page if it has no useful FAQ section.
+20. EXECUTION WORKFLOW FOR THIS PROJECT
+Inspect keyword inputs, competitor URLs, all attached GSC CSV files, the existing Astro project, `DESIGN.md`, and available documentation tools.
+Report GSC findings and data limitations.
+Audit competitor pages and features without copying their UI.
+Recommend keyword clusters, homepage focus, supporting URLs, and internal links.
+Recommend target countries, languages, and localisation priorities based on GSC evidence.
+Propose Astro routing, translation structure, hreflang mapping, and FAQ JSON-LD approach.
+Present feature improvements and design aligned with `DESIGN.md`.
+Wait for approval of major architecture decisions when the task is planning-only.
+When implementation is requested or approved, modify the existing Astro project.
+10. Validate pages, links, metadata, canonicals, hreflang, JSON-LD, accessibility, responsiveness, and build output.
+11. Report what was completed, what was actually tested, and what remains unresolved.
+Never claim to have analysed a CSV, visited a competitor, read `DESIGN.md`, or consulted documentation unless the relevant source was actually accessible and inspected.
+14. EXECUTION INSTRUCTION
+First produce the research and website architecture plan only. Do not immediately generate the full website, complete articles, or source code.
+Wait for me to review and approve the keyword clusters, page list, URLs, and internal linking plan.
+After approval, implement only the agreed pages. Preserve existing functionality and URLs where applicable, and verify that all links point to real pages.
+**Final objective:** a useful, logically structured, technically sound website with clear keyword targeting, meaningful topical coverage, and an internal linking system that supports users and search engines.

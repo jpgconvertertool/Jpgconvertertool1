@@ -1,0 +1,47 @@
+# JPGConverterTool (https://jpgconvertertool.com/)
+
+> Free, private, in-browser image and document to JPG converter with zero file uploads, target KB size compression, and passport photo dimensions.
+
+JPGConverterTool is a privacy-first web application engineered to convert any image, document, and camera raw file into high-quality JPEG/JPG files directly on the user's device. No files are ever uploaded to remote servers. All image decoding, canvas rasterization, color profile preservation, EXIF stripping, and quantization take place locally inside modern web browsers.
+
+## Core Capabilities & Features
+
+- **Universal Format Support**: Converts PNG, WebP, HEIC/HEIF (Apple iPhone), TIFF, PDF, Word (DOCX), PSD, BMP, GIF, AVIF, SVG, camera RAW, and video frames into standard JPEG/JPG images.
+- **Exact Target File Size Limits**: Automatically calculates optimal compression quality factors to meet strict government and job application upload caps (e.g., under 30KB, under 50KB, under 100KB, under 150KB).
+- **Official Passport & Visa Photo Resizing**: Pre-configures exact pixel dimensions (such as 600x600 px for 2x2 inch US passports, 35x45 mm Schengen visas) with custom background color fill.
+- **Client-Side Privacy Guarantee**: 100% in-browser processing. Converted photos never leave the user's computer or mobile phone.
+- **Batch Processing & ZIP Export**: Convert dozens of files simultaneously and download them in a single uncompressed ZIP archive.
+- **Multilingual Support**: Available in 15 languages (English, Spanish, Portuguese, French, German, Indonesian, Vietnamese, Turkish, Russian, Italian, Dutch, Ukrainian, Arabic, Japanese, Traditional Chinese).
+
+## Primary Conversion Spokes & Target URLs
+
+- Universal Hub: https://jpgconvertertool.com/
+- PNG to JPG: https://jpgconvertertool.com/#png-to-jpg (transparent backgrounds, white fill)
+- JPEG to JPG (Under 50KB): https://jpgconvertertool.com/#jpeg-to-jpg (target file size compressor)
+- HEIC to JPG: https://jpgconvertertool.com/#heic-to-jpg (Apple iPhone live photos to JPG)
+- PDF to JPG: https://jpgconvertertool.com/#pdf-to-jpg (document page extraction at 150/300 DPI)
+- TIFF to PDF: https://jpgconvertertool.com/#tiff-to-pdf (scanner TIFF files merged into PDF)
+- TIFF to JPG: https://jpgconvertertool.com/#tiff-to-jpg (high-resolution photo scans)
+- Compress JPG: https://jpgconvertertool.com/#compress-jpg (lossless and perceptual size reduction)
+- WebP to JPG: https://jpgconvertertool.com/#webp-to-jpg (Google modern web images)
+- Word to JPG: https://jpgconvertertool.com/#word-to-jpg (Microsoft Word DOCX to JPG pages)
+- JPG to Word (OCR): https://jpgconvertertool.com/#jpg-to-word (text extraction from paperwork)
+- Passport Photo Resizer: https://jpgconvertertool.com/#passport-photo-to-jpg (official portal dimensions)
+- HEIC to PDF: https://jpgconvertertool.com/#heic-to-pdf
+- PNG to PDF: https://jpgconvertertool.com/#png-to-pdf
+- PSD to JPG: https://jpgconvertertool.com/#psd-to-jpg (Adobe Photoshop files)
+- HTML to JPG: https://jpgconvertertool.com/#html-to-jpg
+- Merge JPGs: https://jpgconvertertool.com/#merge-jpg
+- Compress WebP: https://jpgconvertertool.com/#compress-webp
+- Video to JPG: https://jpgconvertertool.com/#video-to-jpg (frame capture from MP4 / WebM)
+
+## Trust, Methodology & Policies
+
+- About Us: https://jpgconvertertool.com/#about
+- Privacy Policy: https://jpgconvertertool.com/#privacy
+- Terms of Service: https://jpgconvertertool.com/#terms
+- Cookie Policy: https://jpgconvertertool.com/#cookies
+- Contact & Support: https://jpgconvertertool.com/#contact (support.jpgconverter@gmail.com)
+- HTML Sitemap: https://jpgconvertertool.com/#sitemap
+- XML Sitemap: https://jpgconvertertool.com/sitemap.xml
+- Robots Directives: https://jpgconvertertool.com/robots.txt

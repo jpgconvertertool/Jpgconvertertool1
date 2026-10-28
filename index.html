@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Safeguard against browser extensions attempting to assign window.fetch when it has only a getter
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var fetchHolder = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return fetchHolder; },
+            set: function(val) { fetchHolder = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Ignore if already configurable or locked
+        }
+      })();
+    </script>
+    <title>Free Online JPG Converter - Fast, Private & Easy to Use</title>
+    <meta name="description" content="Convert images, documents, and camera photos to high-quality JPG files directly on your device. 100% private with zero file uploads, fast batch conversion, and custom file size controls." />
+    <meta property="og:title" content="Free Online JPG Converter - Fast, Private & Easy to Use" />
+    <meta property="og:description" content="Convert images, documents, and camera photos to high-quality JPG files directly on your device. 100% private with zero file uploads, fast batch conversion, and custom file size controls." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jpgconvertertool.com/" />
+    <meta property="og:site_name" content="JPGConverterTool" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free Online JPG Converter - Fast, Private & Easy to Use" />
+    <meta name="twitter:description" content="Convert images, documents, and camera photos to high-quality JPG files directly on your device. 100% private with zero file uploads, fast batch conversion, and custom file size controls." />
+    <link rel="canonical" href="https://jpgconvertertool.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://jpgconvertertool.com/" />
+    <link rel="alternate" hreflang="en" href="https://jpgconvertertool.com/#en" />
+    <link rel="alternate" hreflang="fr" href="https://jpgconvertertool.com/#fr" />
+    <link rel="alternate" hreflang="de" href="https://jpgconvertertool.com/#de" />
+    <link rel="alternate" hreflang="es" href="https://jpgconvertertool.com/#es" />
+    <link rel="alternate" hreflang="it" href="https://jpgconvertertool.com/#it" />
+    <link rel="alternate" hreflang="nl" href="https://jpgconvertertool.com/#nl" />
+    <link rel="alternate" hreflang="pt" href="https://jpgconvertertool.com/#pt" />
+    <link rel="alternate" hreflang="ru" href="https://jpgconvertertool.com/#ru" />
+    <link rel="alternate" hreflang="da" href="https://jpgconvertertool.com/#da" />
+    <link rel="alternate" hreflang="sv" href="https://jpgconvertertool.com/#sv" />
+    <link rel="alternate" hreflang="nb" href="https://jpgconvertertool.com/#nb" />
+    <link rel="alternate" hreflang="tr" href="https://jpgconvertertool.com/#tr" />
+    <link rel="alternate" hreflang="vi" href="https://jpgconvertertool.com/#vi" />
+    <link rel="alternate" hreflang="th" href="https://jpgconvertertool.com/#th" />
+    <link rel="alternate" hreflang="ko" href="https://jpgconvertertool.com/#ko" />
+    <link rel="alternate" hreflang="zh-TW" href="https://jpgconvertertool.com/#zh-tw" />
+    <link rel="alternate" hreflang="uk" href="https://jpgconvertertool.com/#uk" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 antialiased selection:bg-red-600 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

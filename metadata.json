@@ -1,0 +1,6 @@
+{
+  "name": "JPG Converter Tool & SEO Architecture Hub",
+  "description": "Convert images, documents, and camera photos to high-quality JPG files directly on your device. 100% private with zero file uploads, fast batch conversion, and custom file size controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
