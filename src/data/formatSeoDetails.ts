@@ -22,10 +22,10 @@ export const FORMAT_SEO_MAP: Record<string, FormatSeoMetadata> = {
     id: 'universal',
     title: 'Free Online JPG Converter - Fast, Private & Easy to Use',
     description:
-      'Convert photos, documents, and camera files to high-quality JPG on your device. 100% private with zero file uploads, fast batching, and custom size limits.',
+      'Convert PNG, HEIC, WebP, PDF and more to JPG in your browser. Set an exact KB limit for exam, visa and passport photos. No uploads, no sign-up.',
     h1: 'Online JPG Converter: Convert Any File to JPG',
     subtitle:
-      'Fast, private image and document conversion directly on your device with zero file uploads and custom size limits.',
+      'Drop in a PNG, HEIC, WebP or PDF and get a JPG back at the size you need. Everything runs in your browser, so your files never leave your device.',
     primaryKeyword: 'jpg converter',
     gscQueries: [
       'jpg converter',

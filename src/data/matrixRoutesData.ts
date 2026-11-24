@@ -126,7 +126,7 @@ export const MATRIX_ROUTES: MatrixRoute[] = [
     label: 'Universal (Any to JPG)',
     category: 'Image Converters',
     targetQuery: 'jpg converter free',
-    microLabel: 'Universal In-Browser Image & Document to JPG Converter',
+    microLabel: 'Convert PNG, HEIC, WebP, PDF and more to JPG, right in your browser',
     badge: 'Hub',
     accentColor: 'text-red-500',
     acceptTypes: 'image/*,application/pdf,video/*,.heic,.heif,.cr2,.nef,.raw,.psd,.tiff,.tif,.docx,.doc',
