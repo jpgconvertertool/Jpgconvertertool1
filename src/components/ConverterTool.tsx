@@ -451,7 +451,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-              <span>Zero Friction: 100% In-Browser · No Sign-Up · Instant Conversion</span>
+              <span>Runs in your browser · No sign-up · Nothing is uploaded</span>
             </div>
 
             {/* Matrix Selector Engine Trigger Dropdown */}
@@ -473,7 +473,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
               {isMatrixMenuOpen && (
                 <div className="absolute right-0 mt-2 w-80 sm:w-96 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#0c0c0e] shadow-2xl p-3 z-50 animate-fadeIn text-xs max-h-96 overflow-y-auto">
                   <div className="px-2 py-1.5 text-[11px] font-mono uppercase tracking-wider text-neutral-500 font-bold border-b border-neutral-100 dark:border-neutral-800 mb-2">
-                    Query Matrix Selector ({MATRIX_ROUTES.length} Routes)
+                    All tools ({MATRIX_ROUTES.length})
                   </div>
                   <div className="space-y-1">
                     {MATRIX_ROUTES.map((route) => (
@@ -542,7 +542,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
                 type="text"
                 value={intentSearchQuery}
                 onChange={(e) => setIntentSearchQuery(e.target.value)}
-                placeholder={t.langCode === 'fr' ? "Rechercher un format (ex: 'JPG en Word', 'HEIC en PDF', 'moins de 50Ko')..." : t.langCode === 'es' ? "Buscar formato (ej: 'JPG a Word', 'HEIC a PDF', 'menos de 50KB')..." : t.langCode === 'pt' ? "Buscar ferramenta (ex: 'JPG para Word', 'HEIC para PDF', 'menos de 50KB')..." : t.langCode === 'de' ? "Format suchen (z.B. 'JPG in Word', 'HEIC in PDF', 'unter 50KB')..." : "Search route (e.g., 'JPG to Word', 'HEIC to PDF', 'under 50KB', 'PSD to JPG', 'merge')..."}
+                placeholder={t.langCode === 'fr' ? "Rechercher un format (ex: 'JPG en Word', 'HEIC en PDF', 'moins de 50Ko')..." : t.langCode === 'es' ? "Buscar formato (ej: 'JPG a Word', 'HEIC a PDF', 'menos de 50KB')..." : t.langCode === 'pt' ? "Buscar ferramenta (ex: 'JPG para Word', 'HEIC para PDF', 'menos de 50KB')..." : t.langCode === 'de' ? "Format suchen (z.B. 'JPG in Word', 'HEIC in PDF', 'unter 50KB')..." : "Search tools — try 'PNG to JPG' or 'under 50KB'"}
                 className="w-full pl-10 pr-24 py-2.5 sm:py-3 rounded-lg bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 text-sm sm:text-base font-medium text-neutral-900 dark:text-white placeholder:text-neutral-400 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all shadow-xs"
               />
               {intentSearchQuery && (
@@ -592,7 +592,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
               }
             }}
             onClick={() => fileInputRef.current?.click()}
-            className="border-3 border-dashed border-red-500/40 dark:border-red-600/40 hover:border-red-600 dark:hover:border-red-500 bg-neutral-50/90 hover:bg-red-50/20 dark:bg-neutral-950/80 dark:hover:bg-red-950/10 rounded-2xl p-8 sm:p-14 text-center transition-all cursor-pointer group shadow-inner min-h-[280px] sm:min-h-[340px] flex flex-col justify-center items-center"
+            className="border-3 border-dashed border-red-500/40 dark:border-red-600/40 hover:border-red-600 dark:hover:border-red-500 bg-neutral-50/90 hover:bg-red-50/20 dark:bg-neutral-950/80 dark:hover:bg-red-950/10 rounded-2xl p-8 sm:p-10 text-center transition-all cursor-pointer group shadow-inner min-h-[240px] sm:min-h-[280px] flex flex-col justify-center items-center"
           >
             <input
               type="file"
@@ -650,7 +650,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
                 title="Load 3 sample images to test batch conversion and progress tracking"
               >
                 <Sparkles className="w-4 h-4 text-red-500" />
-                <span>Batch Demo (3 Files)</span>
+                <span>Try it with 3 sample files</span>
               </button>
             </div>
 

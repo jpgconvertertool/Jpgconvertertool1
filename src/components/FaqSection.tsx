@@ -28,15 +28,14 @@ const FAQ_CARDS: FaqCard[] = [
     badge: 'Security & Privacy',
     badgeColor: 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800',
     icon: ShieldCheck,
-    title: 'Zero-Upload Privacy Architecture',
-    question: 'Are my uploaded files, private photos, or documents stored on any server?',
+    title: 'Privacy',
+    question: 'Do my files get uploaded or stored anywhere?',
     answer:
-      'No. JPGConverterTool operates on a 100% client-side architecture using HTML5 Canvas and WebAssembly. When you drag and drop files into the converter, all decoding, rasterization, color quantization, and compression happen entirely within your local web browser memory. Your confidential documents, personal photos, and sensitive receipts never leave your device and are never uploaded to remote servers or cloud storage.',
+      'No. There is no upload step. When you drop a file in, your own browser opens it, converts it and hands the JPG back to you. The file never travels to a server, so there is no copy of it for us to store, lose or delete later. That is why people use it for passport scans, certificates and tax forms.',
     highlights: [
-      '100% In-Browser processing',
-      'Zero remote file uploads',
-      'No cloud storage or logging',
-      'Safe for tax & medical documents',
+      'Works in your browser, on your device',
+      'No server copy is ever made',
+      'Fine for ID, tax and medical documents',
     ],
   },
   {
@@ -44,15 +43,14 @@ const FAQ_CARDS: FaqCard[] = [
     badge: 'Supported Formats',
     badgeColor: 'bg-blue-100 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800',
     icon: Layers,
-    title: 'Universal Format Interoperability',
-    question: 'Which file formats and document types are supported for conversion?',
+    title: 'Formats',
+    question: 'Which formats can I convert?',
     answer:
-      'Our engine supports bidirectional conversion across all primary raster, camera raw, and document formats: PNG (with solid background fill), Apple HEIC/HEIF Live Photos, modern Google WebP, uncompressed TIFF scans, Adobe Photoshop PSD layers, DSLR camera RAW (CR2, NEF, ARW), BMP, JFIF, AVIF, SVG vectors, Microsoft Word (DOCX), multi-page PDF documents, and timestamped video still frames (MP4, WebM).',
+      'Most things a phone, camera or scanner produces: PNG, HEIC and HEIF from iPhones, WebP, TIFF scans, PSD files, camera RAW (CR2, NEF, ARW), BMP, JFIF, AVIF, SVG, Word documents (DOCX), multi-page PDFs, and still frames from MP4 or WebM video. One thing worth knowing: JPG has no transparency, so a transparent PNG gets a solid background colour instead. You can pick that colour before you convert.',
     highlights: [
-      'Raster: PNG, WebP, AVIF, BMP, GIF, JFIF',
-      'Documents: PDF, Word DOCX, TIFF',
-      'Camera & Design: Apple HEIC, DSLR RAW, PSD',
-      'Multi-Format batch conversion supported',
+      'Photos: PNG, HEIC, WebP, AVIF, BMP, GIF, JFIF',
+      'Documents: PDF, Word (DOCX), TIFF',
+      'Camera & design files: HEIC, RAW, PSD',
     ],
   },
   {
@@ -60,15 +58,14 @@ const FAQ_CARDS: FaqCard[] = [
     badge: 'File Size Limits',
     badgeColor: 'bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800',
     icon: SlidersHorizontal,
-    title: 'Strict Target KB Optimization',
-    question: 'How do I compress images to under 50KB or 100KB for official portals?',
+    title: 'File size',
+    question: 'How do I get a photo under 50KB or 100KB for a form?',
     answer:
-      'Select our Target Size buttons (< 30KB, < 50KB, < 100KB, < 150KB) or type a custom maximum KB limit. Our iterative quantization engine automatically tests progressive JPEG compression factors in real time directly on your device, ensuring your image strictly respects government, exam (UPSC, SSC), and visa portal size limits without unnecessary visual pixelation.',
+      'Pick one of the size buttons (under 30KB, 50KB, 100KB or 150KB) or type your own limit. The converter then saves the JPG again at slightly lower quality, checks the size, and repeats until the file fits. Portals like SSC and UPSC reject anything over 50KB outright, so this saves a round of trial and error. One honest trade-off: the smaller the target, the softer the photo looks, so do not go lower than the form actually asks for.',
     highlights: [
-      'Iterative 6-pass quantization check',
-      'Strict < 50KB & < 100KB presets',
-      'Official 600×600 px passport dimensions',
-      'Automatic EXIF stripping for byte reduction',
+      'Presets for under 50KB and under 100KB',
+      'Passport size: 600×600 px',
+      'Removing EXIF data also shrinks the file',
     ],
   },
   {
@@ -76,15 +73,14 @@ const FAQ_CARDS: FaqCard[] = [
     badge: 'OCR Accuracy',
     badgeColor: 'bg-purple-100 dark:bg-purple-950/70 text-purple-800 dark:text-purple-300 border-purple-300 dark:border-purple-800',
     icon: FileText,
-    title: 'Client-Side OCR & Text Extraction',
-    question: 'How does the in-browser OCR text extraction work for JPG to Word/Text?',
+    title: 'Text extraction (OCR)',
+    question: 'How does JPG to Word / JPG to Text work?',
     answer:
-      'When converting scanned paperwork, invoices, or book photos via JPG to Word or JPG to Text, our client-side OCR engine analyzes high-contrast printed text characters directly in the browser canvas. It reconstructs paragraphs, headings, and character blocks, allowing you to copy raw text to clipboard or export clean, editable Microsoft Word DOCX files with zero server latency.',
+      'The JPG to Word and JPG to Text tools read the printed text in your image (OCR), rebuild it as paragraphs, and let you copy the text or download an editable Word file. It works best on clear, straight, well-lit scans of printed pages. Blurry phone photos and handwriting will produce mistakes, so give the result a quick read before you rely on it.',
     highlights: [
-      'High-contrast font character recognition',
-      'Instant copy text to clipboard',
-      'Export directly to editable Word (.docx)',
-      'Multi-language Latin & Cyrillic character support',
+      'Copy the text, or download a Word (.docx) file',
+      'Best on clear scans of printed text',
+      'Supports Latin and Cyrillic alphabets',
     ],
   },
 ];
@@ -116,7 +112,7 @@ export const FaqSection: React.FC = () => {
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-800 mb-2">
             <Sparkles className="w-3.5 h-3.5 text-red-500" />
-            <span>Entity-Badged Knowledge Base</span>
+            <span>Common questions</span>
           </div>
           <h2
             id="faq-section-heading"

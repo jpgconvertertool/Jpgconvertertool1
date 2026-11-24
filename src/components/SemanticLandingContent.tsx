@@ -75,7 +75,7 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
         <div className="text-center max-w-2xl mx-auto space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400 border border-red-200 dark:border-red-900/40">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Fast &amp; Simple Workflow</span>
+            <span>How it works</span>
           </div>
           <h2
             id="how-it-works-heading"
@@ -84,7 +84,7 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
             How to Convert Any File to JPG in 3 Simple Steps
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
-            Processed 100% on your device with zero file uploads or account requirements.
+            Everything happens on your device. No uploads, no account.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
               3. Download Converted JPGs
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed font-normal">
-              Grab individual converted files instantly or click &quot;Download All as ZIP&quot; to export your entire batch with zero waiting in line.
+              Download each JPG as it is ready, or download the whole batch at once as a ZIP file.
             </p>
           </div>
         </div>
@@ -284,7 +284,7 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
             </h2>
           </div>
           <p className="text-xs text-neutral-500 font-normal max-w-sm">
-            Automated iterative quantization ensures your file strictly respects maximum KB limits without upload rejection.
+            Set a KB limit and the converter keeps re-saving until your file fits, so a portal does not reject it for being too big.
           </p>
         </div>
 
@@ -347,11 +347,11 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
             id="privacy-architecture-heading"
             className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white"
           >
-            Zero-Upload Architecture: 100% Client-Side Privacy Guarantee
+            Your files are not uploaded
           </h2>
         </div>
         <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
-          Unlike traditional online converters that upload your confidential paperwork, personal photos, and sensitive receipts to remote cloud servers, <strong className="text-neutral-900 dark:text-white">JPGConverterTool</strong> executes all image decoding, resizing, color quantization, and JPEG encoding locally inside your device&apos;s web browser. Files never leave your local hardware, guaranteeing zero data exposure, compliance with privacy regulations, and lightning-fast conversion speeds.
+          Most online converters ask you to upload a file, convert it on their server, and send it back. <strong className="text-neutral-900 dark:text-white">JPGConverterTool</strong> skips that step entirely: your browser does the converting on your own device. Passport photos, certificates and receipts stay where they are, and there is no server copy to worry about, because one is never made.
         </p>
       </section>
     </div>
