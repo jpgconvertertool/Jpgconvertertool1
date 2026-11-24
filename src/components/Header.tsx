@@ -176,7 +176,7 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-3 sm:gap-6">
           {/* Left Zone: Brand Logo & Wordmark */}
-          <div className="flex items-center gap-6 shrink-0">
+          <div className="flex items-center gap-4 shrink-0">
             <a
               href="/"
               onClick={(e) => {
@@ -301,7 +301,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <button
                     key={link.id}
                     onClick={() => handleSelectTool(link.id)}
-                    className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+                    className={`hidden min-[1600px]:inline-block px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                       isSelected
                         ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-semibold shadow-2xs'
                         : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-850'
@@ -315,9 +315,9 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Center/Right Trust Tag (Large screens) */}
-          <div className="hidden xl:flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-medium shrink-0 whitespace-nowrap">
+          <div className="hidden xl:flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-medium min-w-0">
             <ShieldCheck className="w-4 h-4 shrink-0" />
-            <span>{t.nav.privacyBadge || '100% In-Browser Privacy'}</span>
+            <span className="truncate">{t.nav.privacyBadge || '100% In-Browser Privacy'}</span>
           </div>
 
           {/* Right Zone: Informational links & Utility Controls */}
