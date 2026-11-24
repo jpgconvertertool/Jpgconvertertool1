@@ -194,8 +194,8 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
                 <th className="py-3.5 px-4 font-bold">Format</th>
                 <th className="py-3.5 px-4 font-bold">Compression</th>
                 <th className="py-3.5 px-4 font-bold">Transparency</th>
-                <th className="py-3.5 px-4 font-bold">Best Use Case</th>
-                <th className="py-3.5 px-4 font-bold">Browser Compatibility</th>
+                <th className="py-3.5 px-4 font-bold hidden md:table-cell">Best Use Case</th>
+                <th className="py-3.5 px-4 font-bold hidden lg:table-cell">Browser Compatibility</th>
                 <th className="py-3.5 px-4 font-bold">Typical Size</th>
                 <th className="py-3.5 px-4 font-bold text-right">Action</th>
               </tr>
@@ -235,10 +235,10 @@ export const SemanticLandingContent: React.FC<SemanticLandingContentProps> = ({
                       <span className="text-neutral-400 font-mono">No (Solid fill)</span>
                     )}
                   </td>
-                  <td className="py-3.5 px-4 text-neutral-600 dark:text-neutral-400 min-w-[200px]">
+                  <td className="py-3.5 px-4 text-neutral-600 dark:text-neutral-400 min-w-[200px] hidden md:table-cell">
                     {row.idealFor}
                   </td>
-                  <td className="py-3.5 px-4 text-neutral-600 dark:text-neutral-400 min-w-[200px]">
+                  <td className="py-3.5 px-4 text-neutral-600 dark:text-neutral-400 min-w-[200px] hidden lg:table-cell">
                     {row.compatibility}
                   </td>
                   <td className="py-3.5 px-4 font-mono font-semibold text-neutral-900 dark:text-white whitespace-nowrap">

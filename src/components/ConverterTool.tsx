@@ -428,7 +428,9 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
         route.microLabel.toLowerCase().includes(intentSearchQuery.toLowerCase()) ||
         route.targetQuery.toLowerCase().includes(intentSearchQuery.toLowerCase())
       )
-    : MATRIX_ROUTES.slice(0, 9);
+    : ['tiff-to-pdf', 'png-to-jpg', 'psd-to-jpg', 'jpg-to-word', 'heic-to-jpg', 'pdf-to-jpg', 'webp-to-png', 'jpg-to-text', 'jpeg-to-jpg']
+        .map((id) => MATRIX_ROUTES.find((r) => r.id === id))
+        .filter((r): r is (typeof MATRIX_ROUTES)[number] => Boolean(r));
 
   return (
     <div className={`space-y-8 sm:space-y-10 ${isRtl ? 'rtl' : 'ltr'}`} dir={isRtl ? 'rtl' : 'ltr'}>
@@ -471,7 +473,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
 
               {/* Quick-Switch Matrix Dropdown */}
               {isMatrixMenuOpen && (
-                <div className="absolute right-0 mt-2 w-80 sm:w-96 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#0c0c0e] shadow-2xl p-3 z-50 animate-fadeIn text-xs max-h-96 overflow-y-auto">
+                <div className="absolute right-0 mt-2 w-[min(20rem,calc(100vw-2rem))] sm:w-96 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#0c0c0e] shadow-2xl p-3 z-50 animate-fadeIn text-xs max-h-96 overflow-y-auto">
                   <div className="px-2 py-1.5 text-[11px] font-mono uppercase tracking-wider text-neutral-500 font-bold border-b border-neutral-100 dark:border-neutral-800 mb-2">
                     All tools ({MATRIX_ROUTES.length})
                   </div>
@@ -757,7 +759,7 @@ export const ConverterTool: React.FC<ConverterToolProps> = ({
                       setTargetKb(p.val);
                       setCustomKbInput('');
                     }}
-                    className={`px-3 py-1.5 text-xs sm:text-sm font-mono font-bold rounded-md transition-colors min-h-[38px] cursor-pointer ${
+                    className={`px-3.5 py-2 text-xs sm:text-sm font-mono font-bold rounded-md transition-colors min-h-[44px] cursor-pointer ${
                       targetKb === p.val && !customKbInput
                         ? 'bg-neutral-900 text-white dark:bg-white dark:text-black shadow-xs'
                         : 'bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white border border-neutral-300 dark:border-neutral-800'
