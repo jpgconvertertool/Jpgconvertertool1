@@ -48,7 +48,7 @@ export const FORMAT_SEO_MAP: Record<string, FormatSeoMetadata> = {
     id: 'tiff-to-pdf',
     title: 'TIFF to PDF Converter - Convert Scanned TIFF to PDF Free',
     description:
-      'Convert multi-page TIFF and .TIF scanner files into a compact, shareable PDF document directly in your browser. 100% private, free, and instant.',
+      'Convert multi-page TIFF and TIF scans into one PDF, in your browser. Pages stay in order, files are never uploaded, and it is completely free.',
     h1: 'Convert Scanned TIFF to PDF Document',
     subtitle:
       'Merge scanned multi-page TIFF images into a single compact PDF document with zero file uploads.',
@@ -69,7 +69,7 @@ export const FORMAT_SEO_MAP: Record<string, FormatSeoMetadata> = {
     id: 'png-to-jpg',
     title: 'PNG to JPG Converter - Convert PNG to JPG Online Free',
     description:
-      'Convert transparent PNG images to high-quality JPG with custom background colors. 100% private with no file uploads, instant download, and batch support.',
+      'Convert PNG to JPG online for free. Choose the background colour for transparent images, convert a batch at once, and download instantly. No uploads.',
     h1: 'Convert PNG to JPG Online Free',
     subtitle:
       'Convert transparent PNG photos into clean, universally accepted JPG images with custom background colors.',
@@ -227,12 +227,12 @@ export const FORMAT_SEO_MAP: Record<string, FormatSeoMetadata> = {
   },
   'psd-to-jpg': {
     id: 'psd-to-jpg',
-    title: 'PSD to JPG Converter - Convert Photoshop PSD to JPG Online',
+    title: 'PSD to JPG Converter Online Free - No Photoshop Needed',
     description:
-      'Convert Adobe Photoshop (.psd) files into flattened, shareable JPEG pictures without needing Photoshop software.',
+      'Convert Photoshop PSD files to JPG in your browser, no Photoshop needed. Get a flattened, shareable JPG in seconds. Free, private, no uploads.',
     h1: 'Convert Photoshop PSD Files to JPG',
     subtitle:
-      'Export layered Adobe Photoshop project files into clean, shareable JPEG images instantly.',
+      'Open a layered Photoshop file and save it as a clean, shareable JPG, without Photoshop.',
     primaryKeyword: 'psd to jpg',
     gscQueries: [
       'psd to jpg',
@@ -240,6 +240,58 @@ export const FORMAT_SEO_MAP: Record<string, FormatSeoMetadata> = {
       'convert psd to jpg'
     ],
     canonicalUrl: 'https://jpgconvertertool.com/psd-to-jpg',
+    category: 'images'
+  },
+  'webp-to-png': {
+    id: 'webp-to-png',
+    title: 'WebP to PNG Converter - Convert WebP to PNG Online Free',
+    description:
+      'Convert WebP images to PNG with transparency kept, in your browser. Handy when an app or portal will not accept WebP. Free, private, no uploads.',
+    h1: 'Convert WebP to PNG Online',
+    subtitle:
+      'Turn WebP images into PNG files with the transparency kept, right in your browser.',
+    primaryKeyword: 'webp to png',
+    gscQueries: ['webp to png', 'webp to png converter', 'convert webp to png'],
+    canonicalUrl: 'https://jpgconvertertool.com/webp-to-png',
+    category: 'images'
+  },
+  'jpg-to-text': {
+    id: 'jpg-to-text',
+    title: 'JPG to Text Converter - Extract Text from JPG Online Free',
+    description:
+      'Extract printed text from a JPG image with in-browser OCR. Copy the text or download it, without uploading your document anywhere. Free to use.',
+    h1: 'Extract Text from JPG Images',
+    subtitle:
+      'Read the printed text out of a JPG photo or scan and copy it, all in your browser.',
+    primaryKeyword: 'jpg to text',
+    gscQueries: ['jpg to text', 'jpg to text converter', 'jpg to txt', 'convert jpg to text'],
+    canonicalUrl: 'https://jpgconvertertool.com/jpg-to-text',
+    category: 'documents'
+  },
+  'image-to-text': {
+    id: 'image-to-text',
+    title: 'Image to Text Converter - OCR Text Extractor Online Free',
+    description:
+      'Pull printed text out of any image with OCR, in your browser. Works on photos, screenshots and scans. Copy the text instantly. Free, no uploads.',
+    h1: 'Convert Image to Text with OCR',
+    subtitle:
+      'Turn a photo, screenshot or scan into copyable text with in-browser OCR.',
+    primaryKeyword: 'image to text',
+    gscQueries: ['image to text', 'image to text converter', 'extract text from image'],
+    canonicalUrl: 'https://jpgconvertertool.com/image-to-text',
+    category: 'documents'
+  },
+  'bmp-to-jpg': {
+    id: 'bmp-to-jpg',
+    title: 'BMP to JPG Converter - Convert Bitmap to JPG Online Free',
+    description:
+      'Convert large Windows BMP bitmap files into much smaller JPG images, in your browser. Batch conversion included. Free, private, no uploads.',
+    h1: 'Convert BMP Bitmap Files to JPG',
+    subtitle:
+      'Shrink uncompressed Windows bitmap files into standard JPG images, in your browser.',
+    primaryKeyword: 'bmp to jpg',
+    gscQueries: ['bmp to jpg', 'bmp to jpg converter', 'bitmap to jpeg'],
+    canonicalUrl: 'https://jpgconvertertool.com/bmp-to-jpg',
     category: 'images'
   },
   'jfif-to-jpg': {
