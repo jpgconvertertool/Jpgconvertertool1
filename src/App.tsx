@@ -74,7 +74,7 @@ function AppContent() {
 
       if (['about', 'privacy', 'terms', 'contact', 'cookies'].includes(remaining)) {
         setActivePolicyPage(remaining as PolicyPageType);
-        canonicalUrl = `https://jpgconvertertool.com/#${resolvedLang}/${remaining}`;
+        canonicalUrl = `https://jpgconvertertool.com/${resolvedLang === 'en' ? '' : `${resolvedLang}/`}${remaining}`;
         // Normalize URL hash consistently to #{lang}/{policy} pattern
         const expectedHash = `${resolvedLang}/${remaining}`;
         if (rawHash !== expectedHash && rawHash !== '') {
@@ -121,7 +121,9 @@ function AppContent() {
           pageDesc = seo.description;
         }
 
-        canonicalUrl = `https://jpgconvertertool.com/#${resolvedLang}/${targetFormat}`;
+        canonicalUrl = targetFormat === 'universal'
+          ? `https://jpgconvertertool.com/${resolvedLang === 'en' ? '' : `${resolvedLang}/`}`
+          : `https://jpgconvertertool.com/${resolvedLang === 'en' ? '' : `${resolvedLang}/`}${targetFormat}`;
       }
 
       document.title = pageTitle;
